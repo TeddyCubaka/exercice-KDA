@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+ /* les codes css du body à l'entier*/
+ body
+ {
+     margin: 0%;
+     background-color: #fffbf8;
+ }
+
+
+    /*    codes css du hearder   */
+
+
+header
+{
+    background-image: url('images/desktop/image-header.jpg');
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-position: center center;
+    background-repeat: no-repeat; 
+}
+.header_du_site
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 40px;
+}
+.liste-du-header
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+}
+.a-de-nav
+{
+  color: lightblue;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+.a-de-nav:hover
+{
+  color: white;
+}
+.bouton_de_num     /* le bouton contact */
+{
+  color: black;
+  background-color: white;
+  padding: 15px 25px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Fraunces;
+  font-weight: semibold 400;
+}
+.bouton_de_num:hover
+{
+  background-color: lightblue;
+}
+header > div > h1
+{
+  text-align: center;
+  color: white;
+  letter-spacing: 10px;
+  font-size: 3.5rem;
+  margin-top: 150px;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  box-sizing: border-box;
+  font-weight: bolder;
+}
+.image_du_header
+{
+    height: 7em;
+    margin-top: 1em;
+    position: relative;
+    left: 50%;
+}
+.bouton_de_nav
+{
+  display: none;
+}
+h1, h2, h3, h4
+{
+    font-family: "Fraunces", serif;
+}
+.nav-phone
+{
+  display: none;
+}
+
+
+
+/* place aux images d'illustration */
+
+
+.bloc_des_illustrations
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.bloc_des_illustrations > div
+{
+    height: 35em;
+    
+}
+.images_illustration
+{
+    height: 28em;
+    width: 100%;
+
+}
+.image_egg
+{
+    background-image: url('images/desktop/egg.jpg');
+}
+.image_recipient
+{
+    background-image: url('images/desktop/calice_rose.jpg');
+}
+.fond-pomme
+{
+    background-image: url('images/desktop/image_pomme.jpg');
+}
+.fond-orange
+{
+    background-image: url('images/desktop/image-photography.jpg');
+}
+.bloc-de-text
+{
+    font-family: Fraunces;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0% 10%;
+}
+.bloc-de-text > a
+{
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+.text-avec-fond
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+    padding: 0% 20%;
+    font-family: Fraunces;
+}
+
+
+
+            /*  place aux commentaires  */
+
+
+
+.bloc_des_commentaires
+{
+  color: #726e6e;
+  font-family: Fraunces;
+  height: 110vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+}
+.le_fameux_h3
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+  margin: 80px;
+}
+.bloc_d_image
+{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    padding: 8%;
+    text-align: center;
+}
+.bloc_d_image > img
+{
+    width: 20%;
+    border-radius: 50px;
+}
+.noms_des_clients
+{
+    font-weight: bold;
+    font-family: Barlow;
+    font-size: large;
+    color: black;
+}
+.profession_des_clients
+{
+    font-size: small;
+}
+
+
+
+/* place aux codes du footer  */
+
+
+footer
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-area: 0px;
+    background-color: #90d4c5;
+}
+.section_d_image_footer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+.image_footer
+{
+    display: inline;
+    width: 100%;
+}
+.section_footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.section_footer > nav > span > a
+{
+    color: #266c5e;
+    font-family: Fraunces;
+    text-decoration: none;
+    margin: 10px;
+    font-size: small;
+}
+  .icon_site
+  {
+    margin: 15px;
+  }
+  .a_footer:hover
+  {
+     color: white; 
+  }
+
+
+
+
+
+
+:root
+{
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}

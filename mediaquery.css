@@ -1,0 +1,248 @@
+
+@media screen and (max-width: 1200px) 
+{
+
+/* media queries of the header */
+
+   /* la touche de navigation */
+  header
+  {
+      background-image: url('images/desktop/image-header.jpg');
+      height: 100vh;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      background-position: center center;
+      background-repeat: no-repeat; 
+      padding: 0px;
+  }
+  .header_du_site
+  {
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 15px;
+  }
+  .class_nav
+  {
+    display: none;
+  }
+  .bouton_de_nav
+  {
+    display: block;
+    background-color: rgba(0, 171, 150, 0);
+    border-radius: 4px;
+    border: 0.5px solid lightblue;
+  }
+  .bouton_de_nav > div
+  {
+    display: none;
+  }
+  .bouton_de_nav:focus
+  {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 171, 150, 0);
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: all .5s;
+  }
+  .bouton_de_nav:focus > div
+  {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 20px;
+    text-align: left;
+  }
+   .bouton_de_nav:focus > div > span
+  {
+    margin: 10px;
+  }
+  .bouton_de_nav:focus > .blocs_d_image
+  {
+    margin-top : auto;
+  }
+  .bouton_de_nav:focus > h1
+  {
+    margin-top: 10px;
+  }
+  .bouton_de_contact
+  {
+    color: white;
+    margin: 10px 20px;
+    text-decoration: none;
+  }
+  .image_du_bouton
+  {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+  }
+  header a:hover
+  {
+    color: yellow;
+    font-weight: bolder;
+  }
+  .nav-phone
+  {
+    display: none;
+  }
+
+  /* les blocs d'illustraction */
+
+  .bloc_des_illustrations
+  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: 0px;
+  }
+  .image_recipient
+  {
+    background-color: #fc7763;
+  }
+  .image_egg
+  {
+    background-color: #ffcf01;
+  }
+
+  /*codes css media query pour le footer */
+
+  footer
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr;
+    grid-area: 0px;
+    background-color: #90d4c5;
+}
+  .section_d_image_footer
+  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: 0px;
+  }
+  
+  
+}
+
+
+
+
+      /*   les media queries de type téléphone    */
+
+
+
+
+
+
+@media screen and (max-width: 768px)
+{
+  .bouton_de_nav
+  {
+    display: none;
+  }
+  .btn-phone
+  {
+    display: block;
+    background-color: rgba(0, 171, 150, 0);
+    border-radius: 4px;
+    border: 0.5px solid lightblue;
+    box-sizing: content;
+  }
+  .nav-header-phone
+  {
+    width: 50%;
+    height: 200px;
+    position: absolute; 
+    right: -50%;
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, .8);
+    top: 50px;
+    justify-content: space-around;
+    border-radius: 6px;
+    transition: all .5s;
+  }
+  .a-de-nav
+  {
+    font-size: 30px;
+  }
+  .btn-phone:focus~.nav-header-phone
+  {
+    right: 0;
+  }
+  .blocs_d_image > h1
+  {
+    line-height: 1;
+    letter-spacing: 4px;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin-top: 150px;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    box-sizing: border-box;
+    font-weight: bolder;
+  }
+
+
+    .bloc_d_image > img
+  {
+      width: 40%;
+      border-radius: 50px;
+  }
+  .bloc_des_commentaires
+  {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 2fr;
+      color: #726e6e;
+      font-family: Fraunces;
+  }
+
+
+
+
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+:root
+{
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
